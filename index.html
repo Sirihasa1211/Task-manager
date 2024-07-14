@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <div class="project">
+            <h1>Tasks</h1>
+            <div class="project-info">
+                <input type="text" id="taskName" placeholder="Enter task name">
+                <input type="date" id="taskDate" min="">
+                <input type="time" id="taskTime">
+                <button id="addTaskBtn">Add Task</button>
+            </div>
+            <div class="project-tasks">
+                <!-- Task list will be rendered here -->
+            </div>
+        </div>
+        <div class="task-details">
+            <h1>Activity Today</h1>
+            <ul id="tasksToday">
+                <!-- Tasks for today will be rendered here -->
+            </ul>
+            <h1>Recent Activity</h1>
+            <ul id="recentActivityList">
+                <!-- Recent activity list will be rendered here -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
